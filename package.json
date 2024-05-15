@@ -1,7 +1,7 @@
 {
-  "name": "@semantic-release/npm",
+  "name": "@jcoreio/semantic-release-npm",
   "description": "semantic-release plugin to publish a npm package",
-  "version": "0.0.0-development",
+  "version": "12.0.2",
   "author": "Pierre Vanduynslager (https://twitter.com/@pvdlg_)",
   "ava": {
     "files": [
@@ -12,7 +12,7 @@
     "workerThreads": false
   },
   "bugs": {
-    "url": "https://github.com/semantic-release/npm/issues"
+    "url": "https://github.com/jcoreio/semantic-release-npm/issues"
   },
   "contributors": [
     "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
@@ -57,7 +57,7 @@
     "lib",
     "index.js"
   ],
-  "homepage": "https://github.com/semantic-release/npm#readme",
+  "homepage": "https://github.com/jcoreio/semantic-release-npm#readme",
   "keywords": [
     "npm",
     "publish",
@@ -96,12 +96,11 @@
     "trailingComma": "es5"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/semantic-release/npm.git"
+    "url": "https://github.com/jcoreio/semantic-release-npm.git"
   },
   "scripts": {
     "lint": "prettier --check \"{lib,test}/**/*.{js,json,ts}\" \"*.{md,json,js}\" \".github/**/*.yml\"",
@@ -115,10 +114,5 @@
     "test:integration": "ava --verbose test/integration.test.js"
   },
   "type": "module",
-  "renovate": {
-    "extends": [
-      "github>semantic-release/.github:renovate-config"
-    ]
-  },
   "packageManager": "npm@10.7.0"
 }
